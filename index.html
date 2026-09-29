@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ponto Atual: notícias que importam para você. Política, economia, tecnologia, mundo, cultura e esportes."
+    />
+    <title>Ponto Atual — Notícias que importam</title>
+    <link
+      rel="preload"
+      href="assets/anton.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+
+    <!-- Links Gerais CSS da pagina-->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/home/heroSection.css" />
+    <link rel="stylesheet" href="styles/home/ultimasNoticias.css" />
+    <link rel="stylesheet" href="styles/home/featuredSection.css" />
+    <link rel="stylesheet" href="styles/home/topicsSection.css" />
+    <link rel="stylesheet" href="styles/home/footerSection.css" />
+  </head>
+
+  <body id="top">
+    <main>
+      <!-- Section Principal (Primeira)-->
+      <section class="hero" aria-labelledby="site-title">
+        <div class="hero__background" aria-hidden="true"></div>
+        <div class="hero__shade" aria-hidden="true"></div>
+        <header class="header">
+          <a class="brand" href="index.html" aria-label="Ponto Atual, início">
+            <span class="brand__dot" aria-hidden="true"></span>Ponto Atual
+          </a>
+          <!-- Navegacao do site -->
+          <nav class="navigation" aria-label="Editorias">
+            <a class="navigation__active" href="index.html" aria-current="page">
+              Início
+            </a>
+            <span>Política</span>
+            <span>Economia</span>
+            <span>Tecnologia</span>
+            <span>Mundo</span>
+            <span>Cultura</span>
+            <span>Esportes</span>
+          </nav>
+        </header>
+
+        <div class="masthead">
+          <p class="tagline">Notícias<br />que importam<br />para você</p>
+          <h1 id="site-title">Ponto Atual</h1>
+        </div>
+
+        <span class="carousel-arrow carousel-arrow--previous">
+          <img
+            src="./assets/icons/arrow-left-0-2.svg"
+            alt=""
+            width="20"
+            height="20"
+          />
+        </span>
+        <article class="featured" aria-labelledby="featured-title">
+          <p class="featured__category">Política</p>
+          <h2 id="featured-title">
+            Congresso debate novo pacote<br class="desktop-break" />
+            fiscal para 2025
+          </h2>
+          <p class="featured__summary">
+            Proposta prevê ajustes em impostos e busca equilibrar<br
+              class="desktop-break"
+            />
+            as contas públicas, segundo o governo.
+          </p>
+          <button class="read-more" type="button" disabled>
+            Leia mais <span aria-hidden="true">⟶</span>
+          </button>
+        </article>
+        <span class="carousel-arrow carousel-arrow--next" aria-hidden="true"
+          ><img
+            src="./assets/icons/arrow-right-0-2.svg"
+            alt=""
+            width="20"
+            height="20"
+        /></span>
+
+        <div class="pagination" aria-label="Destaque 1 de 4">
+          <p>01 <span>/ 04</span></p>
+          <div class="pagination__tracks" aria-hidden="true">
+            <span class="is-active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Ultimas Notícias-->
+      <section class="latest" aria-labelledby="latest-title">
+        <div class="latest__heading">
+          <h2 id="latest-title">Últimas<br />notícias</h2>
+          <button class="latest__link latest__all" type="button" disabled>
+            Ver todas <span aria-hidden="true">⟶</span>
+          </button>
+        </div>
+        
+        
+        <div class="latest__grid">
+          <article class="news-lead">
+            <div class="news-image">
+              <img
+                src="assets/images/tecnologia.png"
+                alt="Robô humanoide em um escritório com vista para a cidade"
+                loading="lazy"
+                width="1536"
+                height="864"
+              />
+              <span class="news-image__number" aria-hidden="true">01 —</span>
+            </div>
+            <p class="news-meta">
+              <span>Tecnologia</span
+              ><time datetime="2026-09-25">25 set 2026</time>
+            </p>
+            <h3>
+              Inteligência artificial transforma<br class="news-lead__break" />
+              o futuro do mercado de trabalho
+            </h3>
+            <p class="news-summary">
+              Novas ferramentas de IA estão redefinindo funções, criando
+              oportunidades e exigindo novas habilidades dos profissionais em
+              todo o mundo.
+            </p>
+            <button class="latest__link" type="button" disabled>
+              Leia mais <span aria-hidden="true">⟶</span>
+            </button>
+          </article>
+          <div class="latest__list">
+            <article class="news-row">
+              <div class="news-image news-image--original">
+                <img
+                  src="assets/images/heroIMG.png"
+                  alt="Congresso Nacional em Brasília"
+                  loading="lazy"
+                  width="1536"
+                  height="864"
+                />
+                <span class="news-image__number" aria-hidden="true">02 —</span>
+              </div>
+              <div class="news-row__body">
+                <p class="news-meta">
+                  <span>Política</span
+                  ><time datetime="2026-09-25">25 set 2026</time>
+                </p>
+                <h3>Congresso debate novo pacote fiscal para 2025</h3>
+                <p class="news-summary">
+                  Proposta prevê ajustes em impostos e busca equilibrar as
+                  contas públicas.
+                </p>
+              </div>
+              <span class="news-row__arrow" aria-hidden="true">⟶</span>
+            </article>
+            <article class="news-row">
+              <div class="news-image">
+                <img
+                  src="assets/images/economia.png"
+                  alt="Painel com gráficos do mercado financeiro"
+                  loading="lazy"
+                  width="1536"
+                  height="864"
+                />
+                <span class="news-image__number" aria-hidden="true">03 —</span>
+              </div>
+              <div class="news-row__body">
+                <p class="news-meta">
+                  <span>Economia</span
+                  ><time datetime="2026-09-25">25 set 2026</time>
+                </p>
+                <h3>Mercado reage a dados e eleva expectativa de juros</h3>
+                <p class="news-summary">
+                  Indicadores recentes reacendem debate sobre os próximos passos
+                  do Banco Central.
+                </p>
+              </div>
+              <span class="news-row__arrow" aria-hidden="true">⟶</span>
+            </article>
+            <article class="news-row">
+              <div class="news-image">
+                <img
+                  src="assets/images/mundo.png"
+                  alt="Planeta Terra visto do espaço à noite"
+                  loading="lazy"
+                  width="1536"
+                  height="864"
+                />
+                <span class="news-image__number" aria-hidden="true">04 —</span>
+              </div>
+              <div class="news-row__body">
+                <p class="news-meta">
+                  <span>Mundo</span
+                  ><time datetime="2026-09-25">25 set 2026</time>
+                </p>
+                <h3>Líderes mundiais se reúnem para discutir clima</h3>
+                <p class="news-summary">
+                  Encontro deve definir novas metas de redução de emissões até
+                  2030.
+                </p>
+              </div>
+              <span class="news-row__arrow" aria-hidden="true">⟶</span>
+            </article>
+            <article class="news-row">
+              <div class="news-image">
+                <img
+                  src="assets/images/esportes.png"
+                  alt="Jogador de futebol com braços erguidos em um estádio"
+                  loading="lazy"
+                  width="1536"
+                  height="864"
+                />
+                <span class="news-image__number" aria-hidden="true">05 —</span>
+              </div>
+              <div class="news-row__body">
+                <p class="news-meta">
+                  <span>Esportes</span
+                  ><time datetime="2026-09-25">25 set 2026</time>
+                </p>
+                <h3>Campeonato tem rodada decisiva neste fim de semana</h3>
+                <p class="news-summary">
+                  Times entram em campo em busca de vaga na próxima fase.
+                </p>
+              </div>
+              <span class="news-row__arrow" aria-hidden="true">⟶</span>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section
+        class="featured-section"
+        aria-labelledby="featured-section-title"
+      >
+        <img
+          class="featured-section__background"
+          src="assets/images/featured-world.png"
+          alt=""
+          loading="lazy"
+        />
+        <header class="featured-section__header"></header>
+        <div class="featured-section__content">
+          <p class="featured-section__category">EM DESTAQUE</p>
+          <h2 id="featured-section-title">
+            O mundo está<br /><span>mudando.</span><br />E essas são as<br />forças
+            por trás disso.
+          </h2>
+          <p class="featured-section__summary">
+            Uma análise sobre as transformações que estão redesenhando economia,
+            tecnologia e sociedade.
+          </p>
+          <button class="featured-section__link" type="button" disabled>
+            Explorar matéria <span aria-hidden="true">⟶</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="topics-section" aria-labelledby="topics-title">
+        <div class="topics-section__sidebar">
+          <header class="topics-section__heading">
+            <p class="topics-section__label"><span>05 /</span> Editorias</p>
+            <h2 id="topics-title">Explore por<br /><span>assunto</span></h2>
+          </header>
+          <!-- Editorias apenas visuais nesta etapa; seleção será implementada depois. -->
+          <ol class="topics-section__list" aria-label="Editorias disponíveis">
+            <li>
+              <span class="topics-section__number">01</span><span>Política</span
+              ><span class="topics-section__arrow" aria-hidden="true">⟶</span>
+            </li>
+            <li>
+              <span class="topics-section__number">02</span><span>Economia</span
+              ><span class="topics-section__arrow" aria-hidden="true">⟶</span>
+            </li>
+            <li class="topics-section__item--active">
+              <span class="topics-section__number">03</span
+              ><span>Tecnologia</span
+              ><span class="topics-section__arrow" aria-hidden="true">⟶</span>
+            </li>
+            <li>
+              <span class="topics-section__number">04</span><span>Mundo</span
+              ><span class="topics-section__arrow" aria-hidden="true">⟶</span>
+            </li>
+            <li>
+              <span class="topics-section__number">05</span><span>Cultura</span
+              ><span class="topics-section__arrow" aria-hidden="true">⟶</span>
+            </li>
+            <li>
+              <span class="topics-section__number">06</span><span>Esportes</span
+              ><span class="topics-section__arrow" aria-hidden="true">⟶</span>
+            </li>
+          </ol>
+          <p class="topics-section__tagline">
+            Notícias que importam<br />para você, em um só lugar.
+          </p>
+        </div>
+        <article
+          class="topics-section__preview"
+          aria-labelledby="topics-preview-title"
+        >
+          <div class="topics-section__caption">
+            <div class="topics-section__copy">
+              <p class="topics-section__category">Tecnologia</p>
+              <h3 id="topics-preview-title">
+                Inovação hoje,<br />novas possibilidades amanhã.
+              </h3>
+              <p class="topics-section__summary">
+                Acompanhe as principais notícias sobre tecnologia, inteligência
+                artificial, ciência e o impacto das inovações no mundo.
+              </p>
+            </div>
+            <button class="topics-section__link" type="button" disabled>
+              Ver matérias <span aria-hidden="true">⟶</span>
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="newsletter" aria-labelledby="newsletter-title">
+        <p class="newsletter__eyebrow">Fique<br />informado</p>
+        <h2 id="newsletter-title">
+          Receba<br />as principais<br /><span>notícias</span>
+        </h2>
+        <div class="newsletter__content">
+          <p>
+            Assine nossa newsletter e receba diariamente os destaques do PONTO
+            ATUAL direto no seu e-mail.
+          </p>
+          <!-- Formulário visual: envio será implementado posteriormente. -->
+          <form class="newsletter__form" aria-label="Inscrição na newsletter">
+            <label class="footer-sr-only" for="newsletter-email"
+              >Seu e-mail</label
+            >
+            <div class="newsletter__field">
+              <input
+                id="newsletter-email"
+                name="email"
+                type="email"
+                placeholder="Seu e-mail"
+                autocomplete="email"
+                required
+              />
+              <button
+                type="button"
+                disabled
+                aria-label="Inscrever-se na newsletter"
+              >
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+            <label class="newsletter__consent" for="newsletter-consent">
+              <input
+                id="newsletter-consent"
+                name="consentimento"
+                type="checkbox"
+                required
+              />
+              <span
+                >Concordo em receber comunicações do PONTO ATUAL.<br />Você pode
+                cancelar a qualquer momento.</span
+              >
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="site-footer__main">
+        <div class="site-footer__about">
+          <a class="site-footer__brand" href="#top"
+            ><span aria-hidden="true"></span>Ponto Atual</a
+          >
+          <p class="site-footer__tagline">
+            Notícias que<br />importam para você.
+          </p>
+          <p class="site-footer__description">
+            Cobertura independente, análises profundas e os principais
+            acontecimentos do Brasil e do mundo, em um só lugar.
+          </p>
+          <ul
+            class="site-footer__socials"
+            aria-label="Redes sociais — em breve"
+          >
+            <li>
+              <span role="img" aria-label="Instagram"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  aria-hidden="true"
+                >
+                  <rect x="4" y="4" width="16" height="16" rx="4" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17"
+                    cy="7"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  /></svg
+              ></span>
+            </li>
+            <li>
+              <span role="img" aria-label="X"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  aria-hidden="true"
+                >
+                  <path d="M5 4h4l10 16h-4zM19 4 5 20" /></svg
+              ></span>
+            </li>
+            <li>
+              <span
+                class="site-footer__social-letter"
+                role="img"
+                aria-label="Facebook"
+                >f</span
+              >
+            </li>
+            <li>
+              <span role="img" aria-label="YouTube"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect
+                    x="2"
+                    y="5"
+                    width="20"
+                    height="14"
+                    rx="4"
+                    fill="currentColor"
+                  />
+                  <path d="m10 9 6 3-6 3z" fill="#0a0a09" /></svg
+              ></span>
+            </li>
+            <li>
+              <span
+                class="site-footer__social-letter"
+                role="img"
+                aria-label="LinkedIn"
+                >in</span
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Destinos institucionais ainda não criados: itens apenas visuais. -->
+        <div class="site-footer__column">
+          <h3>Categorias</h3>
+          <ul>
+            <li>Política</li>
+            <li>Economia</li>
+            <li>Tecnologia</li>
+            <li>Mundo</li>
+            <li>Cultura</li>
+            <li>Esportes</li>
+          </ul>
+        </div>
+        <div class="site-footer__column">
+          <h3>Institucional</h3>
+          <ul>
+            <li>Sobre o Ponto Atual</li>
+            <li>Nossa equipe</li>
+            <li>Política editorial</li>
+            <li>Publicidade</li>
+            <li>Trabalhe conosco</li>
+            <li>Fale com a gente</li>
+          </ul>
+        </div>
+        <div class="site-footer__column">
+          <h3>Mais acessados</h3>
+          <ul>
+            <li>Últimas notícias</li>
+            <li>Mais lidas</li>
+            <li>Especiais</li>
+            <li>Vídeos</li>
+            <li>Podcasts</li>
+            <li>Newsletter</li>
+          </ul>
+        </div>
+        <div class="site-footer__signature">
+          <p class="site-footer__est">
+            <span aria-hidden="true"></span>Est.<br />2026
+          </p>
+          <p class="site-footer__signature-label">Ponto Atual</p>
+          <p class="site-footer__motto">Informação<br />move<br />o amanhã</p>
+          <span class="site-footer__monogram" aria-hidden="true">PA</span>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© 2026 PONTO ATUAL. Todos os direitos reservados.</p>
+        <ul aria-label="Informações legais">
+          <li>Privacidade</li>
+          <li>Termos de uso</li>
+          <li>Cookies</li>
+        </ul>
+        <a href="#top" class="site-footer__back"
+          >Voltar ao topo <span aria-hidden="true">⌃</span></a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

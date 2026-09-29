@@ -1,0 +1,230 @@
+.latest {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: clamp(20px, 4vh, 48px) 3%;
+}
+.latest__heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: clamp(12px, 2vh, 24px);
+}
+.latest h2 {
+  margin: 0;
+  padding-left: 22px;
+  border-left: 1px solid var(--paper);
+  font:
+    400 clamp(42px, min(6.3vw, 10vh), 92px)/1.03 Anton,
+    Impact,
+    sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+}
+.latest__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.latest__list {
+  border-left: 1px solid #393936;
+  padding-left: 24px;
+  margin-top: calc(-1 * clamp(84px, min(12.6vw, 20vh), 184px));
+}
+.news-image {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: #20201e;
+  aspect-ratio: 2.25;
+}
+.news-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.news-image--original img {
+  filter: none;
+}
+.news-image--original::after {
+  display: none;
+}
+.news-image__number {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 18px 12px 10px;
+  background: linear-gradient(transparent, #000a);
+  font:
+    12px Anton,
+    Impact,
+    sans-serif;
+  letter-spacing: 1px;
+}
+.news-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 13px 0 8px;
+  font:
+    12px Anton,
+    Impact,
+    sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.news-meta > span {
+  color: var(--red);
+}
+.news-meta time {
+  color: #999995;
+  border-left: 1px solid #777772;
+  padding-left: 12px;
+}
+.latest h3 {
+  margin: 0;
+  font-size: clamp(23px, 2.5vw, 34px);
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+.news-summary {
+  margin: 10px 0 0;
+  color: #a4a49e;
+  font-size: 15px;
+  line-height: 1.45;
+}
+.latest__link {
+  display: inline-flex;
+  gap: 24px;
+  align-items: center;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid var(--red);
+  padding: 0 0 7px;
+  margin-top: 24px;
+  color: var(--paper);
+  opacity: 1;
+  font:
+    12px Anton,
+    Impact,
+    sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.latest__link span {
+  font:
+    22px Arial,
+    sans-serif;
+  line-height: 1;
+}
+.latest__all {
+  margin-top: 0;
+}
+.news-row {
+  display: grid;
+  grid-template-columns: 40% minmax(0, 1fr) 18px;
+  gap: 18px;
+  padding: clamp(10px, 2vh, 17px) 0;
+  border-bottom: 1px solid #393936;
+}
+.news-row:first-child {
+  padding-top: 0;
+}
+.news-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.news-row .news-image {
+  aspect-ratio: 1.8;
+  align-self: start;
+}
+.news-row .news-meta {
+  margin-top: 0;
+  gap: 9px;
+  font-size: 10px;
+}
+.news-row .news-meta time {
+  padding-left: 9px;
+}
+.news-row h3 {
+  font-size: clamp(17px, 1.7vw, 24px);
+  letter-spacing: -0.25px;
+}
+.news-row .news-summary {
+  font-size: 13px;
+  line-height: 1.35;
+  margin-top: 8px;
+}
+.news-row__arrow {
+  color: #c4c4bc;
+  padding-top: 22px;
+  font-size: 22px;
+}
+@media (max-width: 1000px) {
+  .latest__grid {
+    gap: 25px;
+  }
+  .latest__list {
+    padding-left: 20px;
+  }
+  .news-row {
+    grid-template-columns: 35% minmax(0, 1fr);
+    gap: 12px;
+  }
+  .news-row__arrow {
+    display: none;
+  }
+  .news-lead__break {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .latest {
+    padding: clamp(20px, 4vh, 42px) 6%;
+  }
+  .latest__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .latest__list {
+    margin-top: 0;
+    padding-left: 0;
+    border-left: 0;
+  }
+  .latest h2 {
+    padding-left: 16px;
+  }
+  .latest__all {
+    font-size: 10px;
+    gap: 12px;
+  }
+  .news-row {
+    grid-template-columns: 36% minmax(0, 1fr);
+    padding: 20px 0;
+  }
+  .news-row:first-child {
+    padding-top: 20px;
+    border-top: 1px solid #393936;
+  }
+  .news-row .news-image {
+    aspect-ratio: 1.2;
+  }
+  .news-row .news-meta {
+    gap: 6px;
+    font-size: 9px;
+  }
+  .news-row .news-meta time {
+    padding-left: 6px;
+  }
+}
+
+@media (min-width: 761px) {
+  .news-lead > .news-image {
+    max-height: 34vh;
+  }
+  .news-row .news-image {
+    max-height: 17vh;
+  }
+}
