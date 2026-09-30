@@ -40,12 +40,13 @@
             <a class="navigation__active" href="index.html" aria-current="page">
               Início
             </a>
-            <span>Política</span>
-            <span>Economia</span>
-            <span>Tecnologia</span>
-            <span>Mundo</span>
-            <span>Cultura</span>
-            <span>Esportes</span>
+
+            <a href="pages/politica/index.html">Política</a>
+            <a href="pages/economia/index.html">Economia</a>
+            <a href="pages/tecnologia/index.html">Tecnologia</a>
+            <a href="pages/mundo/index.html">Mundo</a>
+            <a href="pages/cultura/index.html">Cultura</a>
+            <a href="pages/esportes/index.html">Esportes</a>
           </nav>
         </header>
 
@@ -105,8 +106,6 @@
             Ver todas <span aria-hidden="true">⟶</span>
           </button>
         </div>
-        
-        z
         <div class="latest__grid">
           <article class="news-lead">
             <div class="news-image">
@@ -279,8 +278,8 @@
               ><span class="topics-section__arrow" aria-hidden="true">⟶</span>
             </li>
             <li class="topics-section__item--active">
-              <span class="topics-section__number">03</span
-              ><span>Tecnologia</span
+              <span class="topics-section__number">03</span>
+              <a href="pages/tecnologia/index.html">Tecnologia</a
               ><span class="topics-section__arrow" aria-hidden="true">⟶</span>
             </li>
             <li>
@@ -304,6 +303,12 @@
           class="topics-section__preview"
           aria-labelledby="topics-preview-title"
         >
+          <img
+            class="topics-section__image"
+            src="assets/images/brasilia.png"
+            alt=""
+            loading="lazy"
+          />
           <div class="topics-section__caption">
             <div class="topics-section__copy">
               <p class="topics-section__category">Tecnologia</p>
@@ -315,9 +320,9 @@
                 artificial, ciência e o impacto das inovações no mundo.
               </p>
             </div>
-            <button class="topics-section__link" type="button" disabled>
+            <a class="topics-section__link" href="pages/tecnologia/index.html">
               Ver matérias <span aria-hidden="true">⟶</span>
-            </button>
+            </a>
           </div>
         </article>
       </section>

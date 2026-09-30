@@ -61,18 +61,35 @@
   letter-spacing: 1.6px;
   text-transform: uppercase;
   color: #999995;
+  transition: color 180ms ease;
+}
+.navigation a::after,
+.navigation span::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  bottom: 0;
+  left: -6px;
+  height: 2px;
+  background: var(--red);
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+.navigation a:hover,
+.navigation a:focus-visible,
+.navigation span:hover {
+  color: var(--paper);
+}
+.navigation a:hover::after,
+.navigation a:focus-visible::after,
+.navigation span:hover::after {
+  opacity: 1;
 }
 .navigation .navigation__active {
   color: var(--paper);
 }
-.navigation__active::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: -6px;
-  right: -6px;
-  height: 2px;
-  background: var(--red);
+.navigation .navigation__active::after {
+  opacity: 1;
 }
 .masthead {
   position: absolute;

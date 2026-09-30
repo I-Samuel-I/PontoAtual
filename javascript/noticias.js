@@ -93,6 +93,58 @@ const noticias = [
     priorizacao: 80,
   },
   {
+
+    id: 19,
+    titulo: "Realidade virtual ganha espaço na educação",
+    data: "2026-09-25",
+    resumo: "Escolas testam ambientes imersivos para apoiar as aulas.",
+    conteudo:
+      "Escolas de Vila Aurora começaram a testar ambientes de realidade virtual em atividades de ciências e história. Os professores selecionaram experiências curtas para complementar as aulas e estimular a participação dos estudantes.\n\nA equipe pedagógica acompanhará o uso dos equipamentos e avaliará a acessibilidade das atividades antes de ampliar o projeto.",
+    categoria: "Tecnologia",
+    priorizacao: 74,
+  },
+  {
+    id: 20,
+    titulo: "Novas redes conectam bairros ao serviço público",
+    data: "2026-09-24",
+    resumo: "Projeto amplia o acesso a serviços digitais municipais.",
+    conteudo:
+      "Um projeto piloto instalou novos pontos de conexão em equipamentos públicos de Vila Aurora. A iniciativa pretende facilitar o acesso a serviços digitais e oferecer suporte para moradores que ainda não utilizam as plataformas municipais.\n\nOs resultados serão acompanhados durante os próximos meses, com atenção à estabilidade e ao número de atendimentos realizados.",
+    categoria: "Tecnologia",
+    priorizacao: 67,
+  },
+  {
+    id: 21,
+    titulo: "Sensores ajudam a monitorar a qualidade do ar",
+    data: "2026-09-23",
+    resumo: "Dados abertos permitem acompanhar mudanças em diferentes regiões.",
+    conteudo:
+      "Sensores instalados em três pontos de Vila Aurora começaram a registrar dados sobre a qualidade do ar. As medições serão disponibilizadas em um painel para apoiar pesquisas e orientar ações de manutenção urbana.\n\nO projeto ainda está em fase de calibração e deverá comparar os resultados com outras fontes antes da publicação de relatórios regulares.",
+    categoria: "Tecnologia",
+    priorizacao: 63,
+  },
+  {
+    id: 22,
+    titulo: "Startups apresentam soluções para pequenos negócios",
+    data: "2026-09-22",
+    resumo: "Encontro reúne ferramentas digitais voltadas ao comércio local.",
+    conteudo:
+      "Startups da região apresentaram ferramentas para organizar estoque, pagamentos e comunicação com clientes. O encontro aproximou empreendedores e equipes que estão desenvolvendo soluções para pequenos negócios.\n\nAs empresas deverão abrir um período de testes para receber sugestões dos comerciantes e ajustar as ferramentas às rotinas locais.",
+    categoria: "Tecnologia",
+    priorizacao: 59,
+  },
+  {
+    id: 23,
+    titulo: "Oficina ensina cuidados básicos de segurança digital",
+    data: "2026-09-21",
+    resumo: "Participantes aprendem a proteger contas e identificar golpes.",
+    conteudo:
+      "Uma oficina comunitária reuniu moradores para explicar cuidados com senhas, autenticação e mensagens suspeitas. A atividade apresentou exemplos práticos e materiais para consulta depois do encontro.\n\nNovas turmas serão organizadas conforme a procura. A equipe também pretende levar o conteúdo a escolas e associações de bairro.",
+    categoria: "Tecnologia",
+    priorizacao: 56,
+  },
+  {
+
     id: 10,
     titulo: "Cidades trocam experiências sobre áreas verdes",
     data: "2026-09-28",
@@ -186,3 +238,6 @@ const noticias = [
     priorizacao: 62,
   },
 ];
+
+
+window.noticias = noticias;
