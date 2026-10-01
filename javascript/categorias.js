@@ -25,10 +25,6 @@ const formatDate = (date) =>
 const grid = document.querySelector("#category-grid");
 const heroArt = document.querySelector(".category-hero__art");
 document.querySelector("#category-title").textContent = category;
-const categoryLabel = document.querySelector("#category-label");
-if (categoryLabel) {
-  categoryLabel.textContent = category;
-}
 document.querySelector("#article-count").textContent = categoryNews.length;
 document.querySelector("#topic-total").textContent = categoryNews.length;
 heroArt.style.backgroundImage = `url("${categoryImages[category]}")`;
@@ -41,7 +37,9 @@ grid.innerHTML = categoryNews
         <p class="category-card__meta"><span>${news.categoria}</span><time datetime="${news.data}">${formatDate(news.data)}</time></p>
         <h3>${news.titulo}</h3>
         <p>${news.resumo}</p>
-        <span class="category-card__link">Ler matéria <img class="category-card__arrow icon-arrow" src="../../assets/icons/arrow-right-0-2.svg" alt="" aria-hidden="true" /></span>
+        <span class="category-card__link">Ler matéria 
+        <img class="category-card__arrow icon-arrow" src="../../assets/icons/arrow-right-0-2.svg" alt="" aria-hidden="true" />
+        </span>
       </a>
     `,
   )
