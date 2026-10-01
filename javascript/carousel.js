@@ -40,9 +40,16 @@ const background = document.querySelector(".hero__background");
 const readMore = document.querySelector(".read-more");
 const previews = document.querySelectorAll(".carousel-preview__item");
 
+// Recebe o numero, e mostra o slide correspondente, atualizando o conteúdo da tela.
 function showSlide(index) {
   // Faz o índice voltar para o começo ou ir para o fim quando necessário.
   currentSlide = (index + slides.length) % slides.length;
+
+  // Exemplo 3 slides, currentSlide = 3, slides.length = 3
+  // indices (0,1,2)
+  // (3 + 3) % 3 = 6 % 3 = 0, volta para o primeiro slide. (slide inexistente)
+  // voltando fica -1
+  // (-1 + 3) % 3 = 2 % 3 = 2, vai para o último slide.
 
   const slide = slides[currentSlide];
 
@@ -52,11 +59,7 @@ function showSlide(index) {
   background.style.backgroundImage = `url("${slide.image}")`;
   readMore.href = "pages/id/index.html";
 
-  previews.forEach((preview, previewIndex) => {
-    preview.classList.toggle("is-active", previewIndex === currentSlide);
-  });
 }
-
 nextButton.addEventListener("click", () => {
   showSlide(currentSlide + 1);
 });
