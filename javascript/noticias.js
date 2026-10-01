@@ -93,7 +93,6 @@ const noticias = [
     priorizacao: 80,
   },
   {
-
     id: 19,
     titulo: "Realidade virtual ganha espaço na educação",
     data: "2026-09-25",
@@ -144,7 +143,6 @@ const noticias = [
     priorizacao: 56,
   },
   {
-
     id: 10,
     titulo: "Cidades trocam experiências sobre áreas verdes",
     data: "2026-09-28",
@@ -238,6 +236,5 @@ const noticias = [
     priorizacao: 62,
   },
 ];
-
 
 window.noticias = noticias;

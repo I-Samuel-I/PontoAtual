@@ -1,6 +1,6 @@
 const category = document.body.dataset.category;
 const categoryImages = {
-  "Política": "../../assets/images/brasilia.png",
+  Política: "../../assets/images/brasilia.png",
   Economia: "../../assets/images/economia.png",
   Mundo: "../../assets/images/mundo.png",
   Cultura: "../../assets/images/featured-world.png",
