@@ -2,6 +2,7 @@ const category = document.body.dataset.category;
 const categoryImages = {
   Política: "../../assets/images/brasilia.png",
   Economia: "../../assets/images/economia.png",
+  Tecnologia: "../../assets/images/tecnologia.png",
   Mundo: "../../assets/images/mundo.png",
   Cultura: "../../assets/images/featured-world.png",
   Esportes: "../../assets/images/esportes.png",
@@ -35,13 +36,13 @@ heroArt.style.backgroundImage = `url("${categoryImages[category]}")`;
 grid.innerHTML = categoryNews
   .map(
     (news) => `
-      <article class="category-card">
+      <a class="category-card" href="../id/index.html">
         <img class="category-card__image" src="${categoryImages[category]}" alt="" loading="lazy" />
         <p class="category-card__meta"><span>${news.categoria}</span><time datetime="${news.data}">${formatDate(news.data)}</time></p>
         <h3>${news.titulo}</h3>
         <p>${news.resumo}</p>
-        <span class="category-card__link">Ler materia <span aria-hidden="true">&#8594;</span></span>
-      </article>
+        <span class="category-card__link">Ler matéria <img class="category-card__arrow icon-arrow" src="../../assets/icons/arrow-right-0-2.svg" alt="" aria-hidden="true" /></span>
+      </a>
     `,
   )
   .join("");

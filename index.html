@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/home/featuredSection.css" />
     <link rel="stylesheet" href="styles/home/topicsSection.css" />
     <link rel="stylesheet" href="styles/home/footerSection.css" />
+    <script src="javascript/carousel.js" defer></script>
   </head>
 
   <body id="top">
@@ -54,47 +55,58 @@
           <p class="tagline">Notícias<br />que importam<br />para você</p>
           <h1 id="site-title">Ponto Atual</h1>
         </div>
-
-        <span class="carousel-arrow carousel-arrow--previous">
-          <img
-            src="./assets/icons/arrow-left-0-2.svg"
-            alt=""
-            width="20"
-            height="20"
-          />
-        </span>
-        <article class="featured" aria-labelledby="featured-title">
-          <p class="featured__category">Política</p>
-          <h2 id="featured-title">
-            Congresso debate novo pacote<br class="desktop-break" />
-            fiscal para 2025
-          </h2>
-          <p class="featured__summary">
-            Proposta prevê ajustes em impostos e busca equilibrar<br
-              class="desktop-break"
+        <div class="container-images">
+          <button
+            class="carousel-arrow carousel-arrow--previous"
+            type="button"
+            aria-label="Notícia anterior"
+          >
+            <img
+              class="carousel-arrow__icon"
+              src="./assets/icons/arrow-left-0-2.svg"
+              alt=""
+              aria-hidden="true"
+              width="20"
+              height="20"
             />
-            as contas públicas, segundo o governo.
-          </p>
-          <button class="read-more" type="button" disabled>
-            Leia mais <span aria-hidden="true">⟶</span>
           </button>
-        </article>
-        <span class="carousel-arrow carousel-arrow--next" aria-hidden="true"
-          ><img
-            src="./assets/icons/arrow-right-0-2.svg"
-            alt=""
-            width="20"
-            height="20"
-        /></span>
 
-        <div class="pagination" aria-label="Destaque 1 de 4">
-          <p>01 <span>/ 04</span></p>
-          <div class="pagination__tracks" aria-hidden="true">
-            <span class="is-active"></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+          <article class="featured" aria-labelledby="featured-title">
+            <p class="featured__category">Política</p>
+            <h2 id="featured-title">
+              Congresso debate novo pacote<br class="desktop-break" />
+              fiscal para 2025
+            </h2>
+            <p class="featured__summary">
+              Proposta prevê ajustes em impostos e busca equilibrar<br
+                class="desktop-break"
+              />
+              as contas públicas, segundo o governo.
+            </p>
+            <a class="read-more" href="pages/id/index.html">
+              Leia mais
+              <img
+                class="icon-arrow"
+                src="./assets/icons/arrow-right-0-2.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
+          </article>
+          <button
+            class="carousel-arrow carousel-arrow--next"
+            type="button"
+            aria-label="Próxima notícia"
+          >
+            <img
+              class="carousel-arrow__icon"
+              src="./assets/icons/arrow-right-0-2.svg"
+              alt=""
+              aria-hidden="true"
+              width="20"
+              height="20"
+            />
+          </button>
         </div>
       </section>
 
@@ -102,9 +114,6 @@
       <section class="latest" aria-labelledby="latest-title">
         <div class="latest__heading">
           <h2 id="latest-title">Últimas<br />notícias</h2>
-          <button class="latest__link latest__all" type="button" disabled>
-            Ver todas <span aria-hidden="true">⟶</span>
-          </button>
         </div>
         <div class="latest__grid">
           <article class="news-lead">
@@ -131,12 +140,18 @@
               oportunidades e exigindo novas habilidades dos profissionais em
               todo o mundo.
             </p>
-            <button class="latest__link" type="button" disabled>
-              Leia mais <span aria-hidden="true">⟶</span>
-            </button>
+            <a class="latest__link" href="pages/id/index.html">
+              Leia mais
+              <img
+                class="icon-arrow"
+                src="./assets/icons/arrow-right-0-2.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
           </article>
           <div class="latest__list">
-            <article class="news-row">
+            <a class="news-row" href="pages/id/index.html">
               <div class="news-image news-image--original">
                 <img
                   src="assets/images/heroIMG.png"
@@ -158,9 +173,14 @@
                   contas públicas.
                 </p>
               </div>
-              <span class="news-row__arrow" aria-hidden="true">⟶</span>
-            </article>
-            <article class="news-row">
+              <img
+                class="news-row__arrow icon-arrow"
+                src="./assets/icons/arrow-right-0-2.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
+            <a class="news-row" href="pages/id/index.html">
               <div class="news-image">
                 <img
                   src="assets/images/economia.png"
@@ -182,9 +202,14 @@
                   do Banco Central.
                 </p>
               </div>
-              <span class="news-row__arrow" aria-hidden="true">⟶</span>
-            </article>
-            <article class="news-row">
+              <img
+                class="news-row__arrow icon-arrow"
+                src="./assets/icons/arrow-right-0-2.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
+            <a class="news-row" href="pages/id/index.html">
               <div class="news-image">
                 <img
                   src="assets/images/mundo.png"
@@ -206,9 +231,14 @@
                   2030.
                 </p>
               </div>
-              <span class="news-row__arrow" aria-hidden="true">⟶</span>
-            </article>
-            <article class="news-row">
+              <img
+                class="news-row__arrow icon-arrow"
+                src="./assets/icons/arrow-right-0-2.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
+            <a class="news-row" href="pages/id/index.html">
               <div class="news-image">
                 <img
                   src="assets/images/esportes.png"
@@ -229,8 +259,13 @@
                   Times entram em campo em busca de vaga na próxima fase.
                 </p>
               </div>
-              <span class="news-row__arrow" aria-hidden="true">⟶</span>
-            </article>
+              <img
+                class="news-row__arrow icon-arrow"
+                src="./assets/icons/arrow-right-0-2.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
           </div>
         </div>
       </section>
@@ -255,9 +290,15 @@
             Uma análise sobre as transformações que estão redesenhando economia,
             tecnologia e sociedade.
           </p>
-          <button class="featured-section__link" type="button" disabled>
-            Explorar matéria <span aria-hidden="true">⟶</span>
-          </button>
+          <a class="featured-section__link" href="pages/id/index.html">
+            Explorar matéria
+            <img
+              class="icon-arrow"
+              src="./assets/icons/arrow-right-0-2.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </a>
         </div>
       </section>
 
@@ -267,32 +308,82 @@
             <p class="topics-section__label"><span>05 /</span> Editorias</p>
             <h2 id="topics-title">Explore por<br /><span>assunto</span></h2>
           </header>
-          <!-- Editorias apenas visuais nesta etapa; seleção será implementada depois. -->
+          <!-- Editorias -->
           <ol class="topics-section__list" aria-label="Editorias disponíveis">
             <li>
-              <span class="topics-section__number">01</span><span>Política</span
-              ><span class="topics-section__arrow" aria-hidden="true">⟶</span>
+              <a class="topics-section__item" href="pages/politica/index.html">
+                <span class="topics-section__number">01</span>
+                <span class="topics-section__name">Política</span>
+                <img
+                  class="topics-section__arrow icon-arrow"
+                  src="./assets/icons/arrow-right-0-2.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
             </li>
             <li>
-              <span class="topics-section__number">02</span><span>Economia</span
-              ><span class="topics-section__arrow" aria-hidden="true">⟶</span>
-            </li>
-            <li class="topics-section__item--active">
-              <span class="topics-section__number">03</span>
-              <a href="pages/tecnologia/index.html">Tecnologia</a
-              ><span class="topics-section__arrow" aria-hidden="true">⟶</span>
-            </li>
-            <li>
-              <span class="topics-section__number">04</span><span>Mundo</span
-              ><span class="topics-section__arrow" aria-hidden="true">⟶</span>
-            </li>
-            <li>
-              <span class="topics-section__number">05</span><span>Cultura</span
-              ><span class="topics-section__arrow" aria-hidden="true">⟶</span>
+              <a class="topics-section__item" href="pages/economia/index.html">
+                <span class="topics-section__number">02</span>
+                <span class="topics-section__name">Economia</span>
+                <img
+                  class="topics-section__arrow icon-arrow"
+                  src="./assets/icons/arrow-right-0-2.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
             </li>
             <li>
-              <span class="topics-section__number">06</span><span>Esportes</span
-              ><span class="topics-section__arrow" aria-hidden="true">⟶</span>
+              <a
+                class="topics-section__item"
+                href="pages/tecnologia/index.html"
+              >
+                <span class="topics-section__number">03</span>
+                <span class="topics-section__name">Tecnologia</span>
+                <img
+                  class="topics-section__arrow icon-arrow"
+                  src="./assets/icons/arrow-right-0-2.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+            <li>
+              <a class="topics-section__item" href="pages/mundo/index.html">
+                <span class="topics-section__number">04</span>
+                <span class="topics-section__name">Mundo</span>
+                <img
+                  class="topics-section__arrow icon-arrow"
+                  src="./assets/icons/arrow-right-0-2.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+            <li>
+              <a class="topics-section__item" href="pages/cultura/index.html">
+                <span class="topics-section__number">05</span>
+                <span class="topics-section__name">Cultura</span>
+                <img
+                  class="topics-section__arrow icon-arrow"
+                  src="./assets/icons/arrow-right-0-2.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+            <li>
+              <a class="topics-section__item" href="pages/esportes/index.html">
+                <span class="topics-section__number">06</span>
+                <span class="topics-section__name">Esportes</span>
+                <img
+                  class="topics-section__arrow icon-arrow"
+                  src="./assets/icons/arrow-right-0-2.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
             </li>
           </ol>
           <p class="topics-section__tagline">
@@ -320,9 +411,6 @@
                 artificial, ciência e o impacto das inovações no mundo.
               </p>
             </div>
-            <a class="topics-section__link" href="pages/tecnologia/index.html">
-              Ver matérias <span aria-hidden="true">⟶</span>
-            </a>
           </div>
         </article>
       </section>
@@ -358,7 +446,12 @@
                 disabled
                 aria-label="Inscrever-se na newsletter"
               >
-                <span aria-hidden="true">→</span>
+                <img
+                  class="icon-arrow"
+                  src="./assets/icons/arrow-right-0-2.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
               </button>
             </div>
             <label class="newsletter__consent" for="newsletter-consent">
@@ -498,9 +591,15 @@
           <li>Termos de uso</li>
           <li>Cookies</li>
         </ul>
-        <a href="#top" class="site-footer__back"
-          >Voltar ao topo <span aria-hidden="true">⌃</span></a
-        >
+        <a href="#top" class="site-footer__back">
+          Voltar ao topo
+          <img
+            class="icon-arrow icon-arrow--up"
+            src="./assets/icons/arrow-right-0-2.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </a>
       </div>
     </footer>
   </body>

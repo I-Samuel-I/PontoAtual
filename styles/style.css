@@ -30,6 +30,19 @@ a:focus-visible {
   outline-offset: 6px;
 }
 
+.icon-arrow {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 1.45em;
+  height: 1.45em;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.icon-arrow--up {
+  transform: rotate(-90deg);
+}
+
 /* Cada seção ocupa uma tela; conteúdo excedente tem rolagem interna. */
 section {
   height: 100vh;
