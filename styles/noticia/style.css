@@ -290,3 +290,33 @@
     gap: 26px;
   }
 }
+
+@media (max-height: 650px) and (min-width: 761px) {
+  .article-detail {
+    min-height: auto;
+  }
+  .article-detail__hero,
+  .article-detail__media {
+    min-height: 340px;
+  }
+  .article-detail__copy {
+    padding-top: 24px;
+    padding-bottom: 30px;
+  }
+  .article-detail__breadcrumb {
+    margin-bottom: 24px;
+  }
+  .article-detail h1 {
+    font-size: clamp(40px, 4.5vw, 64px);
+  }
+  .article-detail__summary {
+    margin-top: 12px;
+    line-height: 1.45;
+  }
+  .article-detail__summary::after {
+    margin-top: 18px;
+  }
+  .article-detail__content {
+    padding-top: 36px;
+  }
+}

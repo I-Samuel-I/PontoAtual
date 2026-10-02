@@ -246,3 +246,40 @@
     gap: 20px;
   }
 }
+
+@media (max-height: 650px) and (min-width: 761px) {
+  .topics-section__sidebar {
+    padding-top: 22px;
+    padding-bottom: 24px;
+  }
+  .topics-section h2 {
+    font-size: clamp(34px, 4.8vw, 60px);
+  }
+  .topics-section__list {
+    margin: 16px 0;
+  }
+  .topics-section__item {
+    min-height: 48px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .topics-section__arrow {
+    width: 24px;
+    height: 24px;
+  }
+  .topics-section__tagline {
+    font-size: 10px;
+    line-height: 1.45;
+  }
+  .topics-section__preview {
+    min-height: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .topics-section h3 {
+    font-size: clamp(22px, 2.1vw, 30px);
+  }
+  .topics-section__summary {
+    font-size: 13px;
+  }
+}

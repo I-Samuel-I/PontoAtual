@@ -396,17 +396,30 @@
 /* Em telas baixas, o fluxo normal evita sobreposição dos textos. */
 @media (max-height: 700px) {
   .hero {
-    overflow-y: auto;
+    overflow: visible;
+  }
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
   .masthead {
     position: relative;
     top: auto;
     left: auto;
     right: auto;
-    margin: 16px 3.2% 28px;
+    margin: 12px 3.2% 22px;
+  }
+  .tagline {
+    padding-top: 20px;
+    padding-bottom: 8px;
   }
   .hero h1 {
     font-size: min(15.7vw, 23vh);
+  }
+  .container-images {
+    display: block;
+    min-height: auto;
+    padding: 0 0 24px;
   }
   .featured {
     position: relative;
@@ -414,6 +427,49 @@
     bottom: auto;
     left: auto;
     right: auto;
-    margin: 0 9.5% 24px;
+    max-width: 620px;
+    margin: 0 9.5%;
+  }
+  .featured h2 {
+    font-size: clamp(22px, 2vw, 28px);
+  }
+  .featured__summary {
+    line-height: 1.45;
+  }
+  .read-more {
+    margin-top: 16px;
+  }
+  .carousel-preview {
+    position: static;
+    width: auto;
+    max-width: none;
+    margin: 22px 9.5% 0;
+  }
+}
+
+@media (max-height: 650px) and (min-width: 761px) {
+  .masthead {
+    gap: 2.4%;
+    margin-bottom: 18px;
+  }
+  .tagline {
+    flex-basis: auto;
+    padding-top: 14px;
+    font-size: 9px;
+    line-height: 1.35;
+  }
+  .hero h1 {
+    font-size: clamp(68px, 12vw, 142px);
+    line-height: 0.98;
+  }
+  .featured h2 {
+    font-size: clamp(20px, 1.8vw, 25px);
+  }
+  .featured__summary {
+    max-width: 560px;
+    font-size: 13px;
+  }
+  .carousel-arrow {
+    top: 50%;
   }
 }

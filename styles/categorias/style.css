@@ -6,6 +6,7 @@
 
 .technology-page section {
   height: auto;
+  min-height: 0;
   max-height: none;
   overflow: visible;
 }

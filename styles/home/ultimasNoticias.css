@@ -251,3 +251,45 @@
     max-height: 17vh;
   }
 }
+
+@media (max-height: 650px) and (min-width: 761px) {
+  .latest {
+    padding-top: 22px;
+    padding-bottom: 30px;
+  }
+  .latest__heading {
+    margin-bottom: 14px;
+  }
+  .latest h2 {
+    font-size: clamp(38px, 5vw, 64px);
+  }
+  .latest__grid {
+    align-items: start;
+    gap: 28px;
+  }
+  .latest__list {
+    margin-top: -56px;
+  }
+  .news-lead > .news-image {
+    max-height: 28vh;
+  }
+  .news-row {
+    gap: 14px;
+    padding: 9px 0;
+  }
+  .news-row .news-image {
+    max-height: 12vh;
+  }
+  .news-row h3 {
+    font-size: clamp(16px, 1.4vw, 20px);
+  }
+  .news-row .news-summary {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  .latest__link {
+    margin-top: 18px;
+  }
+}

@@ -43,10 +43,14 @@ a:focus-visible {
   transform: rotate(-90deg);
 }
 
-/* Cada seção ocupa uma tela; conteúdo excedente tem rolagem interna. */
+/* Cada secao ocupa ao menos uma tela e cresce com o conteudo. */
 section {
-  height: 100vh;
-  min-height: 0;
-  max-height: 100vh;
-  overflow-y: auto;
+  min-height: 100vh;
+  overflow: visible;
+}
+
+@media (max-height: 650px) and (min-width: 761px) {
+  section {
+    min-height: auto;
+  }
 }
